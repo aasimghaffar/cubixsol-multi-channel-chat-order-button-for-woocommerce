@@ -1,9 +1,9 @@
-=== OmniChat – Multi-Channel Chat & Order Button for WooCommerce ===
+=== Cubixsol Multi-Channel Chat & Order Button for WooCommerce ===
 Contributors: cubixsol
 Donate link: https://cubixsol.com/
 Tags: whatsapp, click to chat, whatsapp order, woocommerce, abandoned cart
 Requires at least: 6.2
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
 Requires Plugins: woocommerce
 Stable tag: 1.0.0
@@ -14,7 +14,7 @@ Floating WhatsApp chat widget, multi-agent support, abandoned cart recovery, and
 
 == Description ==
 
-**OmniChat** is a complete, lightweight, high-converting WhatsApp marketing, customer support, and order suite for WooCommerce with all features included by default.
+**Cubixsol Chat** is a complete, lightweight, high-converting WhatsApp marketing, customer support, and order suite for WooCommerce with all features included by default.
 
 Allow your visitors to connect with multiple sales and support representatives in real-time, or place instant 1-click product orders directly via WhatsApp without going through tedious multi-step checkout forms.
 
@@ -30,23 +30,23 @@ Allow your visitors to connect with multiple sales and support representatives i
 * **Abandoned Cart Recovery**: Real-time checkout session capturing with a dedicated recovery log, category analytics, CSV lead export, and customizable recovery message templates.
 * **Built-in GA4 & Meta Pixel Events**: Automatically fires WhatsApp click events into your existing Google Analytics 4 and Meta Pixel installations (no extra tracking scripts are loaded).
 * **Fully Responsive**: Flawless experience on desktop, iPad, and mobile devices.
-* **Shortcode Support**: Embed WhatsApp buttons anywhere using `[omnichat_button phone="+15551234567" text="Chat now" msg="Hi!"]`.
+* **Shortcode Support**: Embed WhatsApp buttons anywhere using `[cubixsol_chat_button phone="+15551234567" text="Chat now" msg="Hi!"]`.
 * **Zero Bloat & Fast**: Written with native WordPress hooks and lightweight JavaScript.
 
 == Installation ==
 
 1. Make sure WooCommerce is installed and active.
-2. Upload the plugin files to the `/wp-content/plugins/omnichat-order-chat` directory, or install the plugin through the WordPress plugins screen directly.
+2. Upload the plugin files to the `/wp-content/plugins/cubixsol-multi-channel-chat-order-button-for-woocommerce` directory, or install the plugin through the WordPress plugins screen directly.
 3. Activate the plugin through the 'Plugins' screen in WordPress.
-4. Navigate to **OmniChat** in your WordPress admin menu to configure your phone number, support agents, and WooCommerce button settings.
+4. Navigate to **Cubixsol Chat** in your WordPress admin menu to configure your phone number, support agents, and WooCommerce button settings.
 
 == Frequently Asked Questions ==
 
 = Does this require the official WhatsApp Business API? =
-No! OmniChat works with any standard WhatsApp or WhatsApp Business number without requiring Meta API verification or monthly server fees. An optional Meta Cloud API mode is available for stores using the official API.
+No! Cubixsol Chat works with any standard WhatsApp or WhatsApp Business number without requiring Meta API verification or monthly server fees. An optional Meta Cloud API mode is available for stores using the official API.
 
 = Does this require WooCommerce? =
-Yes. OmniChat is built for WooCommerce stores. If WooCommerce is not active, the plugin shows an admin notice and stays inactive until WooCommerce is available.
+Yes. Cubixsol Chat is built for WooCommerce stores. If WooCommerce is not active, the plugin shows an admin notice and stays inactive until WooCommerce is available.
 
 = Does this work with WooCommerce products? =
 Yes! When enabled, it automatically generates a direct "Order via WhatsApp" button that includes product name, SKU, price, and URL in the message.
@@ -72,14 +72,19 @@ WhatsApp Business terms: https://www.whatsapp.com/legal/business-terms
 
 == Privacy ==
 
-In the default Direct mode, OmniChat does not connect to any external service by itself. WhatsApp links (wa.me) open in the visitor's own WhatsApp application. When abandoned cart capturing is enabled, visitor-entered checkout details are stored locally in your WordPress database. If you enable Meta Cloud API mode, phone numbers and message content are transmitted to Meta (see External Services above). Site owners should disclose cart capture and messaging in their privacy policy where required.
+In the default Direct mode, Cubixsol Chat does not connect to any external service by itself. WhatsApp links (wa.me) open in the visitor's own WhatsApp application. When abandoned cart capturing is enabled, visitor-entered checkout details are stored locally in your WordPress database. If you enable Meta Cloud API mode, phone numbers and message content are transmitted to Meta (see External Services above). Site owners should disclose cart capture and messaging in their privacy policy where required.
 
 == Screenshots ==
 
-1. Floating multi-agent chat widget on the storefront.
-2. Widget & Settings admin page with tabbed configuration.
-3. Abandoned Cart Recovery log with analytics and CSV export.
-4. WooCommerce Order Alerts Hub with 1-click WhatsApp updates.
+1. Widget & Settings - the Floating Widget tab, where you enable the chat button and set the default number, position and theme colour.
+2. Floating Widget tab continued - call-to-action text, greeting message and popup header wording.
+3. Agents & Channels - add unlimited agents, each with their own channel, number, working hours and online status.
+4. WooCommerce Button - the 1-click order button for single product pages, with position, colour and an editable message template.
+5. Messages & Recovery - order status notification template and abandoned cart recovery settings.
+6. API & Tracking - choose between Direct wa.me links or the Meta WhatsApp Cloud API, with template configuration.
+7. API & Tracking continued - optional automatic recovery sending and a built-in test message tool.
+8. Cart Recovery Log - captured checkout sessions with pending, recovered, win rate and total lead analytics.
+9. Storefront view - the "Order via WhatsApp" button on a product page and the floating chat widget.
 
 == Changelog ==
 
