@@ -1,0 +1,47 @@
+/* Cubixsol Chat Floating Widget */
+#cubixsol-chat-widget-container { position: fixed; z-index: 999999; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.cubixsol-chat-pos-bottom-right { bottom: 25px; right: 25px; }
+.cubixsol-chat-pos-bottom-left { bottom: 25px; left: 25px; }
+
+/* Floating Pill Button */
+.cubixsol-chat-floating-btn { display: flex; align-items: center; gap: 8px; background: var(--cubixsol-chat-color, #25D366); color: #fff; border: none; border-radius: 50px; padding: 12px 20px; font-weight: 700; font-size: 14px; cursor: pointer; box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease; outline: none; }
+.cubixsol-chat-floating-btn:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5); }
+.cubixsol-chat-bubble-icon { width: 22px; height: 22px; }
+
+/* Popover Card */
+.cubixsol-chat-popup-card { position: absolute; bottom: 70px; right: 0; width: 330px; background: #fff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); overflow: hidden; transition: all 0.3s ease; border: 1px solid rgba(0,0,0,0.06); }
+.cubixsol-chat-pos-bottom-left .cubixsol-chat-popup-card { right: auto; left: 0; }
+.cubixsol-chat-hidden { display: none; opacity: 0; transform: translateY(10px); }
+
+/* Header */
+.cubixsol-chat-popup-header { background: linear-gradient(135deg, #128C7E 0%, #075E54 100%); color: #fff; padding: 18px 20px; display: flex; align-items: center; justify-content: space-between; }
+.cubixsol-chat-header-title { margin: 0; font-size: 15px; font-weight: 700; }
+.cubixsol-chat-header-subtitle { margin: 2px 0 0 0; font-size: 11px; color: rgba(255,255,255,0.85); }
+.cubixsol-chat-close-btn { background: transparent; border: none; color: #fff; font-size: 20px; cursor: pointer; line-height: 1; opacity: 0.8; }
+.cubixsol-chat-close-btn:hover { opacity: 1; }
+
+/* Greeting */
+.cubixsol-chat-greeting-box { background: #f8fafc; padding: 14px 20px; border-bottom: 1px solid #f1f5f9; }
+.cubixsol-chat-greeting-box p { margin: 0; font-size: 12px; color: #334155; line-height: 1.5; }
+
+/* Agents */
+.cubixsol-chat-agents-list { padding: 10px 14px; max-height: 240px; overflow-y: auto; }
+.cubixsol-chat-agent-row { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 12px; text-decoration: none; color: #0f172a; transition: background 0.15s ease; border: 1px solid transparent; }
+.cubixsol-chat-agent-row:hover { background: #f0fdf4; border-color: #dcfce7; }
+.cubixsol-chat-agent-avatar { width: 36px; height: 36px; border-radius: 50%; background: #e2e8f0; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; color: #475569; position: relative; }
+.cubixsol-chat-status-indicator { width: 9px; height: 9px; border-radius: 50%; border: 2px solid #fff; position: absolute; bottom: 0; right: 0; }
+.cubixsol-chat-status-online { background: #22c55e; }
+.cubixsol-chat-status-offline { background: #94a3b8; }
+.cubixsol-chat-agent-details { flex: 1; }
+.cubixsol-chat-agent-name { display: block; font-size: 13px; font-weight: 700; color: #1e293b; }
+.cubixsol-chat-agent-role { display: block; font-size: 11px; color: #64748b; }
+.cubixsol-chat-channel-badge { font-size: 10px; font-weight: 700; background: #e0f2fe; color: #0369a1; padding: 3px 8px; border-radius: 12px; }
+
+/* WooCommerce 1-Click Order Button */
+.cubixsol-chat-woo-button-wrap { margin-top: 10px; margin-bottom: 15px; }
+.cubixsol-chat-woo-order-btn { display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 8px !important; background-color: #25D366 !important; border-color: #25D366 !important; color: #fff !important; width: 100% !important; font-weight: 700 !important; font-size: 15px !important; padding: 14px 20px !important; border-radius: 10px !important; text-decoration: none !important; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important; transition: all 0.2s ease !important; }
+.cubixsol-chat-woo-order-btn:hover { background-color: #1ea952 !important; border-color: #1ea952 !important; color: #fff !important; transform: translateY(-1px) !important; }
+.cubixsol-chat-woo-btn-icon { width: 20px; height: 20px; }
+
+/* Shortcode button */
+.cubixsol-chat-shortcode-btn { display: inline-flex; align-items: center; gap: 6px; background: #25D366; color: #fff; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 13px; }

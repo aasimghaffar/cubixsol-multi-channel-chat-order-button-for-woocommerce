@@ -1,0 +1,502 @@
+/**
+ * Cubixsol Chat WordPress Admin Stylesheet
+ * Clean SaaS typography, zero-clipping responsive tables, modern tabs.
+ */
+
+.cubixsol-chat-admin-wrap {
+  max-width: 1200px;
+  margin: 20px 20px 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+
+/* Header */
+.cubixsol-chat-admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cubixsol-chat-brand-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cubixsol-chat-logo-icon {
+  width: 44px;
+  height: 44px;
+  background: #25D366;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.cubixsol-chat-brand-title h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.cubixsol-chat-version-tag {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.cubixsol-chat-full-unlocked-badge {
+  display: inline-block;
+  background: #dcfce7;
+  color: #15803d;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.cubixsol-chat-btn-green {
+  background: #25D366 !important;
+  border-color: #1ea952 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.cubixsol-chat-btn-green:hover {
+  background: #1ea952 !important;
+  color: #ffffff !important;
+}
+
+/* Metric Cards */
+.cubixsol-chat-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cubixsol-chat-stat-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.cubixsol-chat-stat-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
+.cubixsol-chat-stat-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 6px;
+}
+
+.cubixsol-chat-stat-sub {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.cubixsol-chat-stat-success .cubixsol-chat-stat-value { color: #16a34a; }
+.cubixsol-chat-stat-highlight .cubixsol-chat-stat-value { color: #25D366; }
+.cubixsol-chat-stat-warning .cubixsol-chat-stat-value { color: #d97706; }
+
+/* Tabs Bar */
+.cubixsol-chat-tab-navigation {
+  display: flex;
+  gap: 8px;
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.cubixsol-chat-tab-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  color: #475569;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.cubixsol-chat-tab-link:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.cubixsol-chat-tab-link.active {
+  background: #25D366;
+  color: #ffffff;
+}
+
+.cubixsol-chat-tab-link.active .dashicons {
+  color: #ffffff;
+}
+
+.cubixsol-chat-tab-content {
+  display: none;
+}
+
+.cubixsol-chat-tab-content.active {
+  display: block;
+}
+
+/* Card */
+.cubixsol-chat-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.cubixsol-chat-card-head {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 12px;
+}
+
+.cubixsol-chat-card-head h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Empty State */
+.cubixsol-chat-empty-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cubixsol-chat-empty-state h4 {
+  margin: 8px 0 4px 0;
+  font-size: 16px;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.cubixsol-chat-empty-state p {
+  color: #64748b;
+  font-size: 13px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* 2-Column Grid */
+.cubixsol-chat-admin-grid {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 960px) {
+  .cubixsol-chat-admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Filter Toolbar */
+.cubixsol-chat-filter-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.cubixsol-chat-filter-group {
+  display: flex;
+  gap: 6px;
+  background: #f8fafc;
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.cubixsol-chat-filter-pill {
+  background: transparent;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.cubixsol-chat-filter-pill.active {
+  background: #25D366;
+  color: #ffffff;
+}
+
+.cubixsol-chat-search-wrapper input {
+  border-radius: 8px;
+  padding: 6px 14px;
+  border: 1px solid #cbd5e1;
+  min-width: 260px;
+}
+
+/* Table Container (Zero Clipping) */
+.cubixsol-chat-table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+}
+
+.cubixsol-chat-table-container table {
+  width: 100% !important;
+  border: none !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-collapse: collapse !important;
+}
+
+.cubixsol-chat-table-container th {
+  background: #f8fafc !important;
+  color: #475569 !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  padding: 12px 16px !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+}
+
+.cubixsol-chat-table-container td {
+  padding: 14px 16px !important;
+  font-size: 13px !important;
+  vertical-align: middle !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+}
+
+.cubixsol-chat-table-container td:first-child,
+.cubixsol-chat-table-container th:first-child {
+  padding-left: 20px !important;
+}
+
+.cubixsol-chat-table-container td:last-child,
+.cubixsol-chat-table-container th:last-child {
+  padding-right: 20px !important;
+}
+
+/* Table Elements */
+.lead-name {
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.lead-email {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.cubixsol-chat-phone-pill {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: #334155;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.cubixsol-chat-cat-tag {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.cubixsol-chat-badge-abandoned {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 11px;
+  display: inline-block;
+}
+
+.cubixsol-chat-badge-recovered {
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 11px;
+  display: inline-block;
+}
+
+.cubixsol-chat-badge-status {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 11px;
+  display: inline-block;
+}
+
+.cubixsol-chat-status-completed { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+.cubixsol-chat-status-processing { background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; }
+.cubixsol-chat-status-pending, .cubixsol-chat-status-on-hold { background: #fffbeb; color: #d97706; border: 1px solid #fde68a; }
+.cubixsol-chat-status-failed, .cubixsol-chat-status-cancelled { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+
+.cubixsol-chat-wa-send-btn {
+  background: #25D366 !important;
+  border-color: #1ea952 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+}
+
+.cubixsol-chat-wa-send-btn:hover {
+  background: #1ea952 !important;
+  color: #ffffff !important;
+}
+
+.cubixsol-chat-recovered-check {
+  color: #16a34a;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* Progress Bars */
+.cubixsol-chat-progress-bar {
+  width: 100px;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.cubixsol-chat-progress-fill {
+  height: 100%;
+  background: #25D366;
+  border-radius: 20px;
+}
+
+.text-danger { color: #dc2626; font-weight: 700; }
+.text-success { color: #16a34a; font-weight: 700; }
+.text-muted { color: #64748b; }
+
+/* Switch Controls */
+.cubixsol-chat-switch { position: relative; display: inline-block; width: 44px; height: 24px; }
+.cubixsol-chat-switch input { opacity: 0; width: 0; height: 0; }
+.cubixsol-chat-slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #cbd5e1; transition: .3s; border-radius: 24px; }
+.cubixsol-chat-slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 3px; bottom: 3px; background-color: white; transition: .3s; border-radius: 50%; }
+input:checked + .cubixsol-chat-slider { background-color: #25D366; }
+input:checked + .cubixsol-chat-slider:before { transform: translateX(20px); }
+
+/* Agent Box */
+.cubixsol-chat-agent-box {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.cubixsol-chat-agent-fields-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.cubixsol-chat-agent-fields-grid label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 4px;
+}
+
+.cubixsol-chat-radio-label {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+/* Dashicons inside logo box */
+.cubixsol-chat-logo-icon .dashicons {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Mark-recovered mini button */
+.cubixsol-chat-mark-recovered-btn {
+  margin-left: 4px !important;
+  color: #16a34a !important;
+  border-color: #bbf7d0 !important;
+  font-weight: 700 !important;
+}
+
+/* Header action spacing */
+.cubixsol-chat-header-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* WooCommerce order list quick action */
+.wc-action-button-whatsapp.cubixsol-chat-order-action-btn {
+  background: #25D366 !important;
+  color: #fff !important;
+  border-color: #1ea952 !important;
+}
+
+/* Meta API send controls (recovery table) */
+.cubixsol-chat-api-sent-tag {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 20px;
+	background: #e6f6ec;
+	color: #00794e;
+	font-size: 12px;
+	font-weight: 600;
+	margin-right: 4px;
+}
+.cubixsol-chat-api-send-btn {
+	margin-right: 4px !important;
+}
+#cubixsol-chat-test-result {
+	margin-top: 8px;
+	font-weight: 500;
+}
