@@ -22,7 +22,7 @@ $cubixsol_chat_agents = isset( $options['agents'] ) && is_array( $options['agent
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
 			</div>
 			<div>
-				<h1><?php esc_html_e( 'Cubixsol Chat', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ); ?></h1>
+				<h1><?php esc_html_e( 'Multi-Channel Chat & Order', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ); ?></h1>
 				<p class="cubixsol-chat-version-tag">
 					<?php
 					/* translators: %s: plugin version number. */
@@ -384,7 +384,7 @@ $cubixsol_chat_agents = isset( $options['agents'] ) && is_array( $options['agent
 			<div class="cubixsol-chat-card">
 				<div class="cubixsol-chat-card-head">
 					<h3><?php esc_html_e( 'Conversion Tracking', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ); ?></h3>
-					<p class="description"><?php esc_html_e( 'Fires click events into your existing Google Analytics 4 (gtag) and Meta Pixel (fbq) installations. No extra scripts are loaded by Cubixsol Chat.', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ); ?></p>
+					<p class="description"><?php esc_html_e( 'Fires click events into your existing Google Analytics 4 (gtag) and Meta Pixel (fbq) installations. No extra scripts are loaded by this plugin.', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ); ?></p>
 				</div>
 				<table class="form-table" role="presentation">
 					<tr>

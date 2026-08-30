@@ -29,7 +29,7 @@ class Cubixsol_Chat_Admin {
 	}
 
 	/**
-	 * Enqueue admin styles only on Cubixsol Chat screens.
+	 * Enqueue admin styles only on this plugin's screens.
 	 *
 	 * @param string $hook Current admin page hook.
 	 */
@@ -48,7 +48,7 @@ class Cubixsol_Chat_Admin {
 	}
 
 	/**
-	 * Enqueue admin scripts only on Cubixsol Chat screens.
+	 * Enqueue admin scripts only on this plugin's screens.
 	 *
 	 * @param string $hook Current admin page hook.
 	 */
@@ -99,8 +99,8 @@ class Cubixsol_Chat_Admin {
 	 */
 	public function add_plugin_admin_menu() {
 		add_menu_page(
-			__( 'Cubixsol Chat', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
-			__( 'Cubixsol Chat', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
+			__( 'Chat & Order', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
+			__( 'Chat & Order', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 			'manage_options',
 			'cubixsol-chat-settings',
 			array( $this, 'display_settings_page' ),
@@ -110,7 +110,7 @@ class Cubixsol_Chat_Admin {
 
 		add_submenu_page(
 			'cubixsol-chat-settings',
-			__( 'Widget & Settings - Cubixsol Chat', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
+			__( 'Widget & Settings - Chat & Order', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 			__( 'Widget & Settings', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 			'manage_options',
 			'cubixsol-chat-settings',
@@ -119,7 +119,7 @@ class Cubixsol_Chat_Admin {
 
 		add_submenu_page(
 			'cubixsol-chat-settings',
-			__( 'Cart Recovery Log & Analytics - Cubixsol Chat', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
+			__( 'Cart Recovery Log & Analytics - Chat & Order', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 			__( 'Cart Recovery Log', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 			'manage_options',
 			'cubixsol-chat-recovery',
@@ -128,7 +128,7 @@ class Cubixsol_Chat_Admin {
 
 		add_submenu_page(
 			'cubixsol-chat-settings',
-			__( 'Order Alerts Hub - Cubixsol Chat', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
+			__( 'Order Alerts Hub - Chat & Order', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 			__( 'Order Alerts Hub', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 			'manage_options',
 			'cubixsol-chat-orders',

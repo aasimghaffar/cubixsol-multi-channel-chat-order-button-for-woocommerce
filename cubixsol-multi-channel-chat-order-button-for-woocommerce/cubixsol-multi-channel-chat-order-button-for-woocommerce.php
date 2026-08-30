@@ -53,7 +53,7 @@ function cubixsol_chat_activate() {
 	if ( ! cubixsol_chat_is_woocommerce_active() ) {
 		deactivate_plugins( CUBIXSOL_CHAT_BASENAME );
 		wp_die(
-			esc_html__( 'Cubixsol Chat requires WooCommerce to be installed and active. Please install and activate WooCommerce first.', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
+			esc_html__( 'Chat & Order requires WooCommerce to be installed and active. Please install and activate WooCommerce first.', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 			esc_html__( 'Plugin dependency check', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 			array(
 				'back_link' => true,
@@ -84,7 +84,7 @@ function cubixsol_chat_woocommerce_missing_notice() {
 	}
 	printf(
 		'<div class="notice notice-error"><p><strong>%1$s</strong> %2$s</p></div>',
-		esc_html__( 'Cubixsol Chat:', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
+		esc_html__( 'Chat & Order:', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 		esc_html__( 'WooCommerce is required for this plugin to work. Please install and activate WooCommerce.', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' )
 	);
 }
@@ -95,8 +95,8 @@ function cubixsol_chat_woocommerce_missing_notice() {
 function cubixsol_chat_self_deactivated_notice() {
 	printf(
 		'<div class="notice notice-error is-dismissible"><p><strong>%1$s</strong> %2$s</p></div>',
-		esc_html__( 'Cubixsol Chat has been deactivated.', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
-		esc_html__( 'It requires WooCommerce to be installed and active. Activate WooCommerce, then reactivate Cubixsol Chat.', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' )
+		esc_html__( 'Chat & Order has been deactivated.', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
+		esc_html__( 'It requires WooCommerce to be installed and active. Activate WooCommerce, then reactivate Chat & Order.', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' )
 	);
 }
 

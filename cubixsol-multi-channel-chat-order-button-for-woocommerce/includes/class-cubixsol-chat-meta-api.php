@@ -250,7 +250,7 @@ class Cubixsol_Chat_Meta_API {
 	public function add_cron_interval( $schedules ) {
 		$schedules['cubixsol_chat_15min'] = array(
 			'interval' => 15 * MINUTE_IN_SECONDS,
-			'display'  => __( 'Every 15 minutes (Cubixsol Chat)', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
+			'display'  => __( 'Every 15 minutes (Chat & Order)', 'cubixsol-multi-channel-chat-order-button-for-woocommerce' ),
 		);
 		return $schedules;
 	}
