@@ -1,4 +1,5 @@
 === Cubixsol Multi-Channel Chat & Order Button for WooCommerce ===
+
 Contributors: cubixsol
 Donate link: https://cubixsol.com/
 Tags: whatsapp, click to chat, whatsapp order, woocommerce, abandoned cart
