@@ -96,3 +96,4 @@ In the default Direct mode, Cubixsol Chat does not connect to any external servi
 
 = 1.0.0 =
 Initial release.
+
